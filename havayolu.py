@@ -130,7 +130,9 @@ class Pegasus:
     def biletIptal(self, bilet: Bilet):
         if bilet in self.__aktifBiletler:
             self.__aktifBiletler.remove(bilet)
-
+            print("Bilet İptal Edildi")
+        else:
+            print("Bilet Yok")
     def ucusGerceklesti(self, ucus: Ucus):
         for bilet in self.__aktifBiletler:
             if bilet.getUcus() == ucus:
@@ -144,7 +146,8 @@ class Pegasus:
 
 
 def Main():
-    ilListesi = """Adana
+    ilListesi = """
+    Adana
     Adıyaman
     Afyonkarahisar
     Ağrı
@@ -232,10 +235,11 @@ def Main():
 
     yolcu1 = Yolcu("Kübra Elif", "Tozkoparan", 1234589)
     pegasusUcusObjesi = Pegasus()
-    ucus1 = pegasusUcusObjesi.ucusOlustur(sehirler[6], sehirler[40], datetime(2020, 6, 28, 23, 30))
+    ucus1 = pegasusUcusObjesi.ucusOlustur(sehirler[1], sehirler[81], datetime(2020, 6, 28, 23, 30))
     bilet1 = pegasusUcusObjesi.biletAl(yolcu1, ucus1, "F4")
     pegasusUcusObjesi.rotar(ucus1,50)  #    6. ayın 28!i  23.30 du saat 50 dakikalık rotarla 6. ayın 29'u saat 00.20 oldu
     print(bilet1)
+    pegasusUcusObjesi.biletIptal(bilet1)
 
 
 if __name__ == "__main__":
