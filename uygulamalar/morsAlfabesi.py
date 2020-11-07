@@ -34,7 +34,9 @@
 # 6 = -....
 # 7 = --...
 # 8 = ---..
-# 9 = ----.
+# 9 = ----.  
+
+
 def MorsAlfabesiDonustur():
     yazi = input('Mors alfabesi ile yazdırmak istediğiniz mesaj nedir? \n')
     yazi = yazi.upper()
