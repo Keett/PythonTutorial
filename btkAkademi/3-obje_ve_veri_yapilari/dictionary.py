@@ -23,21 +23,21 @@
 users = {
     'sadikturan': {
         'age': 36,        
-        'roles': ['user'],
+        'roles': ['yazilim'],
         'email': 'sadik@gmail.com',
         'address': 'kocaeli',
         'phone': '1231321'
     },
     'cinarturan': {
         'age': 2,
-        'roles': ['admin','user'],
+        'roles': ['muhasebe','yazilim'],
         'email': 'cinar@gmail.com',
         'address': 'kocaeli',
         'phone': '1231321'
     }
 }
 
-print(users['cinarturan']['roles'][0])
+print(users['cinarturan']['roles'][1])
 
 
 

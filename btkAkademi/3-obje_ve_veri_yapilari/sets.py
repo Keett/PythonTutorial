@@ -7,7 +7,7 @@ for x in fruits:
 
 fruits.add('cherry')
 fruits.update(['mango','grape','apple'])
-
+# Her elemandan sadece bir tane olabilir apple tekrar eklenmedi zaten vardı...
 fruits.remove('mango')
 fruits.discard('apple')
 fruits.pop()
@@ -17,5 +17,5 @@ fruits.clear()
 print(fruits)
 
 # myList = [1,2,5,4,4,2,1]
-# print(myList)
-# print(set(myList))
+# print(myList)             #[1,2,5,4,4,2,1]
+# print(set(myList))        #[1,2,5,4]
