@@ -13,6 +13,7 @@ if __name__ == '__main__':
         for j in range(0,6):
             print(arr[i][j],end=" ")
         print("\n",arr[i][j])
+        
     sum = 0
     tarr = []
     for l in range(0,4):
