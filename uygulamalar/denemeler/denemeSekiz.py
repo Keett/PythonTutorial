@@ -13,9 +13,9 @@ class Difference:
                 x = item
             if item > y:
                 y = item
-        self.maximumDifference = y - x 
+        self.maximumDifference = y - x
 # End of Difference class
-
+   
 _ = input("Liste kaç elemanlı ?? ")
 a = [int(e) for e in input("Liste elemanlarını arada bir boşlık bırakarak giriniz ").split(' ')]
 
